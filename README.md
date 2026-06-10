@@ -60,8 +60,8 @@ All metrics are reported on the **test splits** of the respective datasets.
 
 | Model | Split | Images | Instances | Precision (P) | Recall (R) | mAP<sub>50</sub> | mAP<sub>50‑95</sub> |
 |-------|-------|--------|-----------|---------------|------------|------------------|---------------------|
-| YOLOv12‑m | Val | 425 | 464 | 0.993 | 0.970 | **0.974** | 0.674 |
-| YOLOv12‑m | Test | 213 | 226 | 0.986 | 0.965 | **0.963** | 0.685 |
+| YOLOv12 | Val | 425 | 464 | 0.993 | 0.970 | **0.974** | 0.674 |
+| YOLOv12 | Test | 213 | 226 | 0.986 | 0.965 | **0.963** | 0.685 |
 
 > The LPD model achieves near‑perfect detection accuracy (mAP<sub>50</sub> > 96%) on both validation and test sets, demonstrating excellent generalisation to unseen vehicle images.
 
@@ -73,8 +73,8 @@ The LPNR model recognises both numeric digits (0‑9) and Bangla district names.
 
 | Model | Split | Images | Instances | Precision (P) | Recall (R) | mAP<sub>50</sub> | mAP<sub>50‑95</sub> |
 |-------|-------|--------|-----------|---------------|------------|------------------|---------------------|
-| YOLOv12‑n | Val | 1438 | 12488 | 0.952 | 0.905 | **0.950** | 0.768 |
-| YOLOv12‑n | Test | 721 | 6292 | 0.950 | 0.898 | **0.949** | 0.767 |
+| YOLOv12 | Val | 1438 | 12488 | 0.952 | 0.905 | **0.950** | 0.768 |
+| YOLOv12 | Test | 721 | 6292 | 0.950 | 0.898 | **0.949** | 0.767 |
 
 #### Sample Per‑Class Performance (Validation Set)
 
@@ -87,7 +87,7 @@ The LPNR model recognises both numeric digits (0‑9) and Bangla district names.
 | Dhaka | Dhaka | 559 | 792 | 0.994 | 0.973 | 0.992 | 0.865 |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
-*(Full per‑class results for all 116 classes are available in the validation output log.)*
+*(Full per‑class results for all classes are available in the validation output log.)*
 
 > The LPNR model shows strong performance across both digits and Bangla district names, with many classes achieving mAP<sub>50</sub> > 0.99. The overall mAP<sub>50</sub> of **95%** on the test set confirms its robustness for real‑world deployment.
 
