@@ -29,8 +29,6 @@ The BLPD repository provides a complete end‑to‑end solution for detecting an
 | **LPD** | YOLOv12 | Localise the license plate region in a vehicle image | 213 images (test) / 425 images (val) |
 | **LPNR** | YOLOv12 | Recognise the alphanumeric characters and district names on the plate | 721 images (test) / 1438 images (val) |
 
-Both models have been trained on a large, custom‑collected dataset that captures the wide variety of license plate designs, fonts, and environmental conditions found on Bangladeshi roads.
-
 ---
 
 ## ⚙️ Pipeline Workflow
@@ -39,16 +37,16 @@ The system follows a simple two‑step pipeline:
 
 ```mermaid
 graph LR
-    A[Input Vehicle Image] --> B[LPD Model<br/>YOLOv12‑m]
+    A[Input Vehicle Image] --> B[LPD Model<br/>YOLOv12]
     B --> C{License Plate<br/>Detected?}
     C -->|Yes| D[Cropped Plate Region]
-    D --> E[LPNR Model<br/>YOLOv12‑n]
+    D --> E[LPNR Model<br/>YOLOv12]
     E --> F[Recognised Plate Number<br/>+ District Name]
     C -->|No| G[No Plate Found]
 ```
 
-1. **Detection (LPD)**: The input image is passed to the YOLOv12‑m model, which outputs the bounding box coordinates of the license plate (if present).
-2. **Recognition (LPNR)**: The detected plate region is cropped and fed into the YOLOv12‑n model. This model recognises both the alphanumeric characters and the Bangla district name written on the plate.
+1. **Detection (LPD)**: The input image is passed to the YOLOv12 model, which outputs the bounding box coordinates of the license plate (if present).
+2. **Recognition (LPNR)**: The detected plate region is cropped and fed into the YOLOv12 model. This model recognises both the alphanumeric characters and the Bangla district name written on the plate.
 
 > **Note**: The LPNR model uses a **two‑stage approach**: it first detects individual characters/district blocks, and then the recognised labels are concatenated to form the final plate string.
 
