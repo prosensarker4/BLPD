@@ -26,8 +26,8 @@ The BLPD repository provides a complete end‑to‑end solution for detecting an
 
 | Stage | Model | Purpose | Dataset Size |
 |-------|-------|---------|---------------|
-| **LPD** | YOLOv12‑m | Localise the license plate region in a vehicle image | 213 images (test) / 425 images (val) |
-| **LPNR** | YOLOv12‑n | Recognise the alphanumeric characters and district names on the plate | 721 images (test) / 1438 images (val) |
+| **LPD** | YOLOv12 | Localise the license plate region in a vehicle image | 213 images (test) / 425 images (val) |
+| **LPNR** | YOLOv12 | Recognise the alphanumeric characters and district names on the plate | 721 images (test) / 1438 images (val) |
 
 Both models have been trained on a large, custom‑collected dataset that captures the wide variety of license plate designs, fonts, and environmental conditions found on Bangladeshi roads.
 
