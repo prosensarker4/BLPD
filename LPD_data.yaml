@@ -1,0 +1,6 @@
+train: /content/BLPD/LPD_Dataset/train/images
+val: /content/BLPD/LPD_Dataset/valid/images
+test: /content/BLPD/LPD_Dataset/test/images
+
+nc: 1
+names: ['License_Plate']

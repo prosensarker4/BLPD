@@ -1,13 +1,6 @@
-train: /content/datasets/License-Character-Detection-1/train/images
-val: /content/datasets/License-Character-Detection-1/valid/images
-test: /content/datasets/License-Character-Detection-1/test/images
+train: /content/BLPD/LPNR_Dataset/train/images
+val: /content/BLPD/LPNR_Dataset/valid/images
+test: /content/BLPD/LPNR_Dataset/test/images
 
 nc: 105
 names: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'Ba', 'Bagerhat', 'Bagura', 'Bandarban', 'Barguna', 'Barisal', 'Bha', 'Bhola', 'Brahmanbaria', 'Cha', 'Chandpur', 'Chapainawabganj', 'Chatto', 'Chattogram', 'Chha', 'Chuadanga', 'Cox-s Bazar', 'Cox-s-Bazar', 'Cumilla', 'DA', 'Da', 'Dha', 'Dhaka', 'Dinajpur', 'E', 'Faridpur', 'Feni', 'Ga', 'Gaibandha', 'Gazipur', 'Gha', 'Gopalganj', 'Ha', 'Habiganj', 'Ja', 'Jamalpur', 'Jessore', 'Jha', 'Jhalokati', 'Jhenaidah', 'Joypurhat', 'Ka', 'Kha', 'Khagrachari', 'Khulna', 'Kishoreganj', 'Kurigram', 'Kustia', 'La', 'Lakshmipur', 'Lalmonirhat', 'Ma', 'Madaripur', 'Magura', 'Manikganj', 'Meherpur', 'Metro', 'Moulvibazar', 'Munshiganj', 'Mymensingh', 'Na', 'Naogaon', 'Narail', 'Narayanganj', 'Narsingdi', 'Natore', 'Netrokona', 'Nilphamari', 'Noakhali', 'Nowabganj', 'Pa', 'Pabna', 'Patuakhali', 'Pirojpur', 'Raj', 'Rajbari', 'Rajshahi', 'Rangamati', 'Rangpur', 'Sa', 'Satkhira', 'Sha', 'Shariatpur', 'Sherpur', 'Sirajganj', 'Sunamganj', 'Sylhet', 'THA', 'Ta', 'Tangail', 'Tha', 'Thakurgaon', 'U', 'panchagarh']
-
-roboflow:
-  workspace: ku-le4mz
-  project: license-character-detection-z19ro
-  version: 1
-  license: CC BY 4.0
-  url: https://universe.roboflow.com/ku-le4mz/license-character-detection-z19ro/dataset/1
